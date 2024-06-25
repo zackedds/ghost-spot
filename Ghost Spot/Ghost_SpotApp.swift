@@ -13,8 +13,19 @@ struct Ghost_SpotApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("List", systemImage: "list.dash")
+                    }
+
+                NavigationView {
+                    MapView()
+                }
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
+            }                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

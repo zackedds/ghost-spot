@@ -16,6 +16,11 @@
 		02B44E742C2A44BC00B67E53 /* Ghost_SpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E732C2A44BC00B67E53 /* Ghost_SpotTests.swift */; };
 		02B44E7E2C2A44BC00B67E53 /* Ghost_SpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E7D2C2A44BC00B67E53 /* Ghost_SpotUITests.swift */; };
 		02B44E802C2A44BC00B67E53 /* Ghost_SpotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E7F2C2A44BC00B67E53 /* Ghost_SpotUITestsLaunchTests.swift */; };
+		02B44E8D2C2A47DE00B67E53 /* addGraffiti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E8C2C2A47DE00B67E53 /* addGraffiti.swift */; };
+		02B44E8F2C2A5E1400B67E53 /* GraffitiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E8E2C2A5E1400B67E53 /* GraffitiDetailView.swift */; };
+		02B44E912C2A61EF00B67E53 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E902C2A61EF00B67E53 /* ImagePicker.swift */; };
+		02B44E932C2A726E00B67E53 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E922C2A726E00B67E53 /* LocationManager.swift */; };
+		02B44E952C2A742200B67E53 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B44E942C2A742200B67E53 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		02B44E792C2A44BC00B67E53 /* Ghost SpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghost SpotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B44E7D2C2A44BC00B67E53 /* Ghost_SpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_SpotUITests.swift; sourceTree = "<group>"; };
 		02B44E7F2C2A44BC00B67E53 /* Ghost_SpotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghost_SpotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02B44E8C2C2A47DE00B67E53 /* addGraffiti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addGraffiti.swift; sourceTree = "<group>"; };
+		02B44E8E2C2A5E1400B67E53 /* GraffitiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffitiDetailView.swift; sourceTree = "<group>"; };
+		02B44E902C2A61EF00B67E53 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		02B44E922C2A726E00B67E53 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		02B44E942C2A742200B67E53 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				02B44E5D2C2A44BB00B67E53 /* Ghost_SpotApp.swift */,
+				02B44E922C2A726E00B67E53 /* LocationManager.swift */,
+				02B44E902C2A61EF00B67E53 /* ImagePicker.swift */,
+				02B44E942C2A742200B67E53 /* MapView.swift */,
+				02B44E8C2C2A47DE00B67E53 /* addGraffiti.swift */,
+				02B44E8E2C2A5E1400B67E53 /* GraffitiDetailView.swift */,
 				02B44E5F2C2A44BB00B67E53 /* ContentView.swift */,
 				02B44E612C2A44BC00B67E53 /* Assets.xcassets */,
 				02B44E662C2A44BC00B67E53 /* Persistence.swift */,
@@ -264,8 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B44E672C2A44BC00B67E53 /* Persistence.swift in Sources */,
+				02B44E8F2C2A5E1400B67E53 /* GraffitiDetailView.swift in Sources */,
+				02B44E8D2C2A47DE00B67E53 /* addGraffiti.swift in Sources */,
+				02B44E912C2A61EF00B67E53 /* ImagePicker.swift in Sources */,
+				02B44E932C2A726E00B67E53 /* LocationManager.swift in Sources */,
 				02B44E6A2C2A44BC00B67E53 /* Ghost_Spot.xcdatamodeld in Sources */,
 				02B44E602C2A44BB00B67E53 /* ContentView.swift in Sources */,
+				02B44E952C2A742200B67E53 /* MapView.swift in Sources */,
 				02B44E5E2C2A44BB00B67E53 /* Ghost_SpotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,8 +450,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ghost Spot/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JSXD9USJU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a picture of a ghost!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access to temporary location for tracking ghosts!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,8 +481,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ghost Spot/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JSXD9USJU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a picture of a ghost!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access to temporary location for tracking ghosts!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
